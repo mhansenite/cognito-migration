@@ -1,0 +1,20 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "cognito-idp:AdminInitiateAuth",
+                "sts:AssumeRole",
+                "cognito-idp:AdminGetUser",
+                "cognito-idp:AdminListGroupsForUser"
+            ],
+            "Resource": [
+                "[NEW_ROLE_ARN]",
+                "[NEW_USER_POOL_ARN]",
+                "[OLD_USER_POOL_ARN]"
+            ]
+        }
+    ]
+}
