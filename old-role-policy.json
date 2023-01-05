@@ -6,9 +6,10 @@
             "Effect": "Allow",
             "Action": [
                 "cognito-idp:AdminInitiateAuth",
-                "cognito-idp:AdminGetUser"
+                "cognito-idp:AdminGetUser",
+                "cognito-idp:AdminListGroupsForUser"
             ],
-            "Resource": "arn:aws:cognito-idp:[OLD_USER_POOL_REGION]:[OLD_ACCOUNT_ID]:[OLD_USER_POOL_ID]"
+            "Resource": "[OLD_USER_POOL_ARN]"
         }
     ]
 }

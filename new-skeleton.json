@@ -1,7 +1,7 @@
 {
     "FunctionName": "test-migration-cognitio",
     "Runtime": "nodejs14.x",
-    "Role": "ROLE_ARN",
+    "Role": "NEW_ROLE_ARN",
     "Handler": "index.handler",
     "Code": {
         "ZipFile": "fileb://migrate-cognito-user-pool.zip"
@@ -14,7 +14,9 @@
         "Variables": {
             "OLD_CLIENT_ID": "[OLD_CLIENT_ID]",
             "OLD_USER_POOL_ID": "[OLD_USER_POOL_ID]",
-            "OLD_USER_POOL_REGION": "[OLD_USER_POOL_REGION]"
+            "OLD_USER_POOL_REGION": "[OLD_USER_POOL_REGION]",
+            "OLD_ROLE_ARN": "[OLD_ROLE_ARN]",
+            "OLD_EXTERNAL_ID": "[OLD_ACCOUNT_ID]"
         }
     }
     
